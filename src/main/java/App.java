@@ -11,12 +11,15 @@ public class App {
         switch (num) {
             case 1: {
                 taxOffice.setTax(new TaxPL());
+                break;
             }
             case 2: {
                 taxOffice.setTax(new TaxDE());
+                break;
             }
             case 3: {
                 taxOffice.setTax(new TaxUSA());
+                break;
             }
         }
         double tax = taxOffice.countTax(100);
